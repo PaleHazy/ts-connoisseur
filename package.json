@@ -6,7 +6,7 @@
         },
     "publisher": "palehazy",
     "description": "A fun theme that makes sense and is easy to read",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "engines": {
         "vscode": "^1.45.0"
     },
