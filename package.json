@@ -1,6 +1,10 @@
 {
     "name": "ts-connoisseur",
     "displayName": "ts-connoisseur",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/palehazy/ts-connoisseur"
+    },
     "author": {
         "name": "palehazy"
         },
