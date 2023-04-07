@@ -1,0 +1,25 @@
+{
+    "name": "ts-connoisseur",
+    "displayName": "ts-connoisseur",
+    "author": {
+        "name": "palehazy"
+        },
+    "publisher": "palehazy",
+    "description": "A fun theme that makes sense and is easy to read",
+    "version": "1.0.3",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "ts-connoisseur",
+                "uiTheme": "vs-dark",
+                "path": "./themes/ts-connoisseur.json"
+            }
+        ]
+    }
+}

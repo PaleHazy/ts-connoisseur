@@ -1,0 +1,154 @@
+# example yaml file
+# scalar (string)
+string_value: This is a string
+
+# scalar (integer)
+integer_value: 42
+
+# scalar (float)
+float_value: 3.14
+
+# scalar (bool)
+bool_value: true
+
+# scalar (null)
+null_value: null
+
+# list (sequence) of scalars
+list_of_strings:
+  - item1
+  - item2
+  - item3
+
+# list (sequence) of maps
+list_of_maps:
+  - name: item1
+    value: first
+  - name: item2
+    value: second
+  - name: item3
+    value: third
+
+# map (associative array) of scalars
+map_of_scalars:
+  key1: value1
+  key2: value2
+  key3: value3
+
+# map (associative array) of maps
+map_of_maps:
+  key1:
+    nested_key1: nested_value1
+  key2:
+    nested_key2: nested_value2
+  key3:
+    nested_key3: nested_value3
+
+# map (associative array) of lists
+map_of_lists:
+  key1:
+    - item1
+    - item2
+  key2:
+    - item3
+    - item4
+  key3:
+    - item5
+    - item6
+
+# nested maps and lists
+nested_maps_and_lists:
+  key1:
+    nested_key1:
+      - item1
+      - item2
+    nested_key2:
+      - item3
+      - item4
+  key2:
+    nested_key3:
+      - item5
+      - item6
+    nested_key4:
+      - item7
+      - item8
+
+# Anchor and Alias
+example_anchor: &anchor
+  name: value
+
+example_alias: *anchor
+
+# Multi-line string
+multiline_string: |
+  This is a
+  multi-line string.
+
+# Multi-line folded string
+multiline_folded_string: >
+  This is a
+  multi-line folded string.
+
+# Comment
+# This is a comment
+
+# Complex example combining many structures
+complex_example:
+  # map of scalars
+  scalars:
+    int_value: 123
+    float_value: 3.14
+    string_value: This is a string
+    bool_value: yes
+  # map of lists
+  lists:
+    list1:
+      - item1
+      - item2
+      - item3
+    list2:
+      - item4
+      - item5
+      - item6
+  # map of maps
+  maps:
+    map1:
+      nested_key1: nested_value1
+      nested_key2: nested_value2
+    map2:
+      nested_key3: nested_value3
+      nested_key4: nested_value4
+  # map of complex values
+  complex:
+    list_of_maps:
+      - name: item1
+        value: first
+      - name: item2
+        value: second
+      - name: item3
+        value: third
+    map_of_lists:
+      key1:
+        - item1
+        - item2
+      key2:
+        - item3
+        - item4
+      key3:
+        - item5
+        - item6
+    nested_maps_and_lists:
+      key1:
+        nested_key1:
+          - item1
+          - item2
+        nested_key2:
+          - item3
+          - item4
+      key2:
+        nested_key3:
+          - item5
+          - item6
+        nested_key4:
+          - item7
+          - item8
