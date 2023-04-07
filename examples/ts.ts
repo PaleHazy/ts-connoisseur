@@ -36,3 +36,9 @@ class Animal { // This is a class declaration with the "entity.name.type.class" 
 
 const myAnimal: Animal = new Animal("Fluffy", "cat"); // This is an object instantiation with the "variable" and "support.class" token scopes
 myAnimal.speak(); // This is a method call with the "variable" and "support.function" token scopes
+
+const obj = {}
+
+obj["key"] = "value"; // This is an object property assignment with the "variable" and "keyword.operator" token scopes
+
+obj.key = false
