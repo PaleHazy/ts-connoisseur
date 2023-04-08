@@ -77,8 +77,7 @@ let strOutput = identity<string>("Hello, World!");
 // 12. Decorators
 function log(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
   const originalMethod = descriptor.value;
-  const x = {}
-  x['sasas'] = 'sasas'
+
   descriptor.value = function (...args: any[]) {
     console.log(`Method called: ${propertyKey}`);
     return originalMethod.apply(this, args);
@@ -94,6 +93,9 @@ class Example {
 
 // 13. Type guards
 function isNumber(val: any): val is number {
+  if(typeof val === "number") {
+    return true;
+  }
   return typeof val === "number";
 }
 
@@ -120,3 +122,10 @@ interface Person {
 
 const person: Person = { name: "Alice" };
 console.log(person.address?.street);
+
+
+// JSX
+
+function App() {
+  return <div>Hello, World!</div>;
+} 

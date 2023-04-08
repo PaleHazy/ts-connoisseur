@@ -543,6 +543,52 @@
     //#region [rgba(14,54,68,0.4)]
     //TypeScript
     {
+      "name": "TSX - Globals",
+      "scope": [
+        // quote start and end
+        "punctuation.definition.string.begin.tsx",
+        "punctuation.definition.string.begin.ts",
+        "punctuation.definition.string.begin.js",
+        "punctuation.definition.string.begin.jsx",
+        "punctuation.definition.string.end.tsx",
+        "punctuation.definition.string.end.ts",
+        "punctuation.definition.string.end.js",
+        "punctuation.definition.string.end.jsx"
+      ],
+      "settings": {
+        "foreground": "#b1ff9e",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "primitives",
+      "scope": [
+        "constant.language.boolean.true.tsx",
+        "constant.language.boolean.true.ts",
+        "constant.language.boolean.true.js",
+        "constant.language.boolean.true.jsx",
+        //undefined
+        "constant.language.undefined.tsx",
+        "constant.language.undefined.ts",
+        "constant.language.undefined.js",
+        "constant.language.undefined.jsx",
+        //null
+        "constant.language.null.tsx",
+        "constant.language.null.ts",
+        "constant.language.null.js",
+        "constant.language.null.jsx",
+        //decimal
+        "constant.numeric.decimal.tsx",
+        "constant.numeric.decimal.ts",
+        "constant.numeric.decimal.js",
+        "constant.numeric.decimal.jsx"
+      ],
+      "settings": {
+        "foreground": "#0f9d58",
+        "fontStyle": ""
+      }
+    },
+    {
       "name": "TSX - Strings",
       "scope": [
         "string.quoted.single.tsx",
@@ -551,7 +597,31 @@
         "string.quoted.double.ts"
       ],
       "settings": {
-        "foreground": "#CCFEE7",
+        // "foreground": "#d9b1aa",
+        "foreground": "#ffff81",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "String Template",
+      "scope": [
+        // string template
+        "string.template.tsx",
+        "string.template.ts",
+        "string.template.js",
+        "string.template.jsx"
+      ],
+      "settings": {
+        "foreground": "#d9b1aa",
+        // "foreground": "#ffff81",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "TSX - Enums",
+      "scope": ["variable.other.enummember.ts", "variable.other.enummember.tsx"],
+      "settings": {
+        "foreground": "#98594b",
         "fontStyle": ""
       }
     },
@@ -581,23 +651,17 @@
       }
     },
     {
-      "name": "TSX - Variable Defenitions - StorageType",
-      "scope": ["storage.type.tsx", "storage.type.ts"],
-      "settings": {
-        "foreground": "#80ceda",
-        "fontStyle": ""
-      }
-    },
-    {
       "name": "TS - Variable Defenitions - StorageType",
       "scope": [
         "entity.name.type.tsx",
         "support.type.primitive.tsx",
         "entity.name.type.ts",
-        "support.type.primitive.ts"
+        "support.type.primitive.ts",
+        "support.type.builtin.ts",
+        "support.type.builtin.tsx"
       ],
       "settings": {
-        "foreground": "#77bfff",
+        "foreground": "#5cc0eb",
         "fontStyle": ""
       }
     },
@@ -632,10 +696,20 @@
         "storage.type.class.jsx",
         "storage.type.function.jsx",
         "storage.type.function.jsx",
-        "keyword.operator.expression.in.jsx"
+        "keyword.operator.expression.in.jsx",
+        "storage.type.ts",
+        "storage.type.tsx",
+        
+        "keyword.operator.type.annotation.ts",
+        "keyword.operator.type.annotation.tsx",
+
+        "keyword.control.flow.tsx",
+        "keyword.control.flow.ts",
+        "keyword.operator.expression.typeof.tsx",
+        "keyword.operator.expression.typeof.ts"
       ],
       "settings": {
-        "foreground": "#7C6BEA",
+        "foreground": "#b57ae6",
         "fontStyle": ""
       }
     },
@@ -666,8 +740,8 @@
       "name": "TSX - Regular vars",
       "scope": ["variable.other.readwrite.tsx", "variable.other.readwrite.ts"],
       "settings": {
-        "foreground": "#DDC987",
-        "fontStyle": "bold"
+        "foreground": "#9bc0bb",
+        "fontStyle": ""
       }
     },
     {
@@ -689,8 +763,8 @@
         "variable.other.object.js"
       ],
       "settings": {
-        "foreground": "#DF1D36",
-        "fontStyle": "bold"
+        "foreground": "#d24b4b",
+        "fontStyle": ""
       }
     },
     {
@@ -703,7 +777,7 @@
       ],
       "settings": {
         "foreground": "#7579B9",
-        "fontStyle": "bold"
+        "fontStyle": ""
       }
     },
     {
@@ -716,7 +790,7 @@
       ],
       "settings": {
         "foreground": "#6d6ec0",
-        "fontStyle": "bold"
+        "fontStyle": ""
       }
     },
     {
@@ -845,8 +919,7 @@
     },
     {
       "name": "YAML - unquoted strings",
-      "scope": ["string.unquoted.plain.out.yaml",
-			"string.unquoted.block.yaml"],
+      "scope": ["string.unquoted.plain.out.yaml", "string.unquoted.block.yaml"],
       "settings": {
         "foreground": "#95bbdb",
         "fontStyle": "bold"
@@ -855,11 +928,11 @@
     {
       "name": "YAML - unquoted strings",
       "scope": [
-				"constant.language.boolean.yaml",
-				"constant.numeric.integer.yaml",
-				"constant.numeric.float.yaml",
-				"constant.language.null.yaml"
-			],
+        "constant.language.boolean.yaml",
+        "constant.numeric.integer.yaml",
+        "constant.numeric.float.yaml",
+        "constant.language.null.yaml"
+      ],
       "settings": {
         "foreground": "#0adeff",
         "fontStyle": "bold"
