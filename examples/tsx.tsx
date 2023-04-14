@@ -13,7 +13,12 @@ enum Color {
 }
 
 let color: Color = Color.Red;
+const dooot = Color[0];
 
+function Component() {
+  const doot = {}
+  const [joot] = [1]
+}
 // 3. Array
 let numArray: number[] = [1, 2, 3];
 let strArray: Array<string> = ["one", "two", "three"];

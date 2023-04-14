@@ -699,7 +699,7 @@
         "keyword.operator.expression.in.jsx",
         "storage.type.ts",
         "storage.type.tsx",
-        
+
         "keyword.operator.type.annotation.ts",
         "keyword.operator.type.annotation.tsx",
 
@@ -738,20 +738,17 @@
     },
     {
       "name": "TSX - Regular vars",
-      "scope": ["variable.other.readwrite.tsx", "variable.other.readwrite.ts"],
-      "settings": {
-        "foreground": "#9bc0bb",
-        "fontStyle": ""
-      }
-    },
-    {
-      "name": "variables inside functions",
       "scope": [
+        "variable.other.readwrite.tsx",
+        "variable.other.readwrite.ts",
+        "variable.other.constant.tsx",
+        "variable.other.constant.ts",
         "meta.function.tsx variable.other.readwrite.tsx",
         "meta.function.tsx variable.other.readwrite.ts"
       ],
       "settings": {
-        "foreground": "#1BC043"
+        "foreground": "#9bc0bb",
+        "fontStyle": ""
       }
     },
     {
